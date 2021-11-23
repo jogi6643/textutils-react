@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Graph from "./components/Graph";
 function App() {
  const [mode, setMode] = useState('dark');
  const [alert, setAlert] = useState(null);
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route extact path="/about">
             <About />
+          </Route>
+          <Route extact path="/graph">
+            <Graph />
           </Route>
         </Switch>
       
