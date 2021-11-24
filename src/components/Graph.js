@@ -111,9 +111,19 @@ function Graph() {
 
     return (
         <div>
-            <HighchartsReact highcharts={Highcharts} options={options} />
-            <HighchartsReact highcharts={Highcharts1} constructorType={'stockChart'} options={options1} />
-            <HighchartsReact highcharts={Highcharts}  options={options3} />
+            <div className="container">
+                <div className="row">
+                    <div className ="col-md-4">
+                        <HighchartsReact highcharts={Highcharts} options={options} />
+                    </div>
+                    <div className ="col-md-4">
+                        <HighchartsReact highcharts={Highcharts1} constructorType={'stockChart'} options={options1} />
+                    </div>
+                    <div className ="col-md-4">
+                        <HighchartsReact highcharts={Highcharts}  options={options3} />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

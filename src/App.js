@@ -10,6 +10,7 @@ import {
   Link
 } from "react-router-dom";
 import Graph from "./components/Graph";
+import Graph1 from "./components/Graph1";
 function App() {
  const [mode, setMode] = useState('dark');
  const [alert, setAlert] = useState(null);
@@ -48,6 +49,10 @@ function App() {
           <Route extact path="/graph">
             <Graph />
           </Route>
+          <Route extact path="/graph1">
+            <Graph1 />
+          </Route>
+         
         </Switch>
       
       </div>
