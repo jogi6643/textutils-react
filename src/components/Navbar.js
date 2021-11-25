@@ -23,6 +23,12 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <Link className="nav-link" to="/graph1">Graph1</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/graph2">Graph2</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/dashboard">Dashboard</Link>
+              </li>
             </ul>
             {/* <form className="d-flex">
               <input className="htmlForm-control me-2" type="search" placeholder="Search" aria-label="Search"/>

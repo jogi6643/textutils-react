@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import Graph from "./components/Graph";
 import Graph1 from "./components/Graph1";
+import Graph2 from "./components/Graph2";
+import NewDashboard from "./components/dashboard/NewDashboard"
 function App() {
  const [mode, setMode] = useState('dark');
  const [alert, setAlert] = useState(null);
@@ -51,6 +53,13 @@ function App() {
           </Route>
           <Route extact path="/graph1">
             <Graph1 />
+          </Route>
+         
+          <Route extact path="/graph2">
+            <Graph2 />
+          </Route>
+          <Route extact path="/dashboard">
+            <NewDashboard />
           </Route>
          
         </Switch>
