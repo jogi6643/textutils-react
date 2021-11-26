@@ -15,7 +15,6 @@ let dataProcessing = (yearFrom, yearTo) => {
     let msg;
    
     if (yearFrom <= yearTo) {
-        console.log(yearFrom+"data inside if" +yearTo);
       let coal = 0,
         pliquids = 0,
         pcoke = 0,

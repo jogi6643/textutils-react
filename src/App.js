@@ -13,6 +13,8 @@ import Graph from "./components/Graph";
 import Graph1 from "./components/Graph1";
 import Graph2 from "./components/Graph2";
 import NewDashboard from "./components/dashboard/NewDashboard"
+import User from "./components/contextApi/User";
+import Handle from "./components/contextApi/Handle";
 function App() {
  const [mode, setMode] = useState('dark');
  const [alert, setAlert] = useState(null);
@@ -60,6 +62,9 @@ function App() {
           </Route> */}
           <Route extact path="/dashboard">
             <NewDashboard />
+          </Route>
+          <Route extact path="/users">
+            <Handle />
           </Route>
          
         </Switch>
