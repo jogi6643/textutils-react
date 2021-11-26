@@ -7,7 +7,7 @@ function Chart(props) {
     let state = {
         chartData: {
           chart: {
-            type: "pie",
+            type: "column",
             marginBottom: 100
           },
           title: {

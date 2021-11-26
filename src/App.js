@@ -55,9 +55,9 @@ function App() {
             <Graph1 />
           </Route>
          
-          <Route extact path="/graph2">
+          {/* <Route extact path="/graph2">
             <Graph2 />
-          </Route>
+          </Route> */}
           <Route extact path="/dashboard">
             <NewDashboard />
           </Route>

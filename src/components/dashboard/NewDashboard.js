@@ -60,7 +60,9 @@ function NewDashboard(props) {
      useEffect(() => {  
       dataProcessing(yearFrom, yearTo, template.msg);
        copyDataSeries();
-     },[yearFrom,yearTo,template.msg]);
+     },[yearFrom,yearTo,template.msg],
+    
+     );
     
 
     // End javascript function
@@ -70,12 +72,6 @@ function NewDashboard(props) {
         <h1 className="text-center mt-5">
           Net energy generation in the United States
         </h1>
-        <p className="text-center">
-          Source:&nbsp;
-          <a href="https://www.eia.gov">
-            U.S. Energy Information Administration
-          </a>{" "}
-        </p>
       </div>
       <div className="container  mb-5 pb-3 bg-light">
           <div className={"text-center mb-0 pt-3 bold " +(template.msg !== "Select the range" ? "text-danger" : "")}>
