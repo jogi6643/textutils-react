@@ -61,7 +61,7 @@ function EditCompany() {
             </div>
             <div className="mb-3">
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Last Name</label>
-                <input type="text" className="form-control"   value={lname}  onChange={(e) => setLname(e.target.value)} placeholder="Enter Your Email"/>
+                <input type="text" className="form-control"   value={lname}  onChange={(e) => setLname(e.target.value)} placeholder="Enter Your Last Name"/>
             </div>
             <div className="mb-3">
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">UserName</label>
