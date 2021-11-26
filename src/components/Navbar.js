@@ -30,7 +30,10 @@ export default function Navbar(props) {
                 <Link className="nav-link" to="/dashboard">Dashboard</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/users">Users</Link>
+                <Link className="nav-link" to="/users">Context Api</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/company">Company Crud</Link>
               </li>
             </ul>
             {/* <form className="d-flex">

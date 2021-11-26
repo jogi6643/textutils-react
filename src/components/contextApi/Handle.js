@@ -6,7 +6,7 @@ import { AppContext } from './context';
 function Handle() {
     const [users,setUsers] = useState([]);
     const dispatchUserEvent = (actionType , payload)=>{
-        console.log(...users + 'check users');
+    
         switch (actionType) {
 			case 'ADD_USER':
 				setUsers([ ...users, payload.newUser ]);

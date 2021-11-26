@@ -15,6 +15,9 @@ import Graph2 from "./components/Graph2";
 import NewDashboard from "./components/dashboard/NewDashboard"
 import User from "./components/contextApi/User";
 import Handle from "./components/contextApi/Handle";
+import Companies from "./components/company/Companies";
+import CreateCompany from "./components/company/CreateCompany";
+import EditCompany from "./components/company/EditCompany";
 function App() {
  const [mode, setMode] = useState('dark');
  const [alert, setAlert] = useState(null);
@@ -65,6 +68,15 @@ function App() {
           </Route>
           <Route extact path="/users">
             <Handle />
+          </Route>
+          <Route extact path="/company">
+            <Companies />
+          </Route>
+          <Route extact path="/createcompany">
+            <CreateCompany />
+          </Route>
+          <Route extact path="/editcompany/:id">
+            <EditCompany />
           </Route>
          
         </Switch>
